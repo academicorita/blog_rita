@@ -282,7 +282,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'DQZy06iP1w6G4iQmViINdr4ySicA1YnJXYSPNTK1PKprSMPjih-Zzw6G2cLIeYxxIVSkVXSwyw';
+$settings['hash_salt'] = 'H9tGLGH3fHov9u3kJOZQT4YZryk2llAEQRnRTA0AOqwNHBHLZ_QEVEQ3JKbtCAwrBWuEUjP9jw';
 
 /**
  * Deployment identifier.
@@ -803,7 +803,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'pagina_rita',
+  'database' => 'blog_rita',
   'username' => 'admin',
   'password' => 'admin',
   'prefix' => '',
@@ -812,4 +812,4 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_ScZl1NcO6oZwTp2srrW6KSgwoE3yK4iH9NoUvX5Fs-LC5Mu7PJqP4MbmTy1K9evefIyH5dngJA/sync';
+$settings['config_sync_directory'] = 'sites/default/files/config_ZVbWiP_WzS6Q9kdcEhzd6mg1_lbyYS3VoJbp-VMvv6YXAtP6RNz48UN0BwYP3CCeD2uoD4Vkmw/sync';

@@ -60,7 +60,12 @@ global-styling:
       css/layout.css: {}
     theme:
       css/colors.css: {}
+      css/nuevo/style.css: {}
+      css/nuevo/footer.css: {}
       css/print.css: { media: print }
+  js:
+      js/script.js: {}
+      js/jquery.min.js: {}
 
 messages:
   version: VERSION
