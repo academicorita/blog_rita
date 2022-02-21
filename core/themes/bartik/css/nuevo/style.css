@@ -11,6 +11,11 @@ margin-bottom: 20px;
 #block-bartik-content{
   padding-right: 100px;
 }
+@media (max-width: 850px) {
+  #block-bartik-content{
+    padding-right: 10px;
+  }
+}
 .block .content {
   margin-top: 0px;
 }
@@ -65,6 +70,57 @@ h4{
   line-height : 25px;
 }
 /*fin stilos generales*/
+
+/*Estilos de idioma*/
+.idioma{
+  position: absolute;
+  top: 36px;
+  right: 80px;
+  width: 160px;
+  cursor: hand;
+  height: 35px;
+}
+.idioma .switcher{
+line-height: 32px !important;
+}
+.idioma .switcher a span.gflag{
+margin-top: 5px !important;
+margin-right: 15px !important;
+}
+.idioma .switcher .selected a{
+width: 130px !important;
+height: 100%;
+box-shadow: -2px 1px 17px 0px rgba(255,255,255,0.75);
+padding-left: 25px !important;
+background: white;
+color: #172a47;
+font-size: 15px;
+border-radius: 25px;
+box-shadow: none !important;
+}
+.idioma .switcher .option{
+margin-top: 10px !important;
+border-radius: 20px !important;
+width: 140px !important;
+padding: 5px !important; 
+background: #fff !important;
+}
+.idioma .switcher .option a{
+color: #172a47 !important;
+font-size: 15px !important;
+padding: 5px !important;
+}
+.idioma .switcher .selected a:hover{
+color: #172a47;
+}
+.idioma .switcher .selected{
+background: none !important;
+height: 28px !important;
+}
+
+
+/*Fin estilos idioma*/
+
 .menu-bar{
   background-color: #8c1919c4;
   width: 100%;
@@ -513,6 +569,113 @@ height: 90%;
     outline: none;
   }
 }
+@media (max-width: 1100px) {
+  .logo-ud{
+    left: 40px;
+  }
+  header{
+    width: 100%;
+    height: auto;
+}
+.content-header{
+  display: block;
+  margin: 5% auto;
+  padding-bottom: 10%;
+  margin-bottom: 1px;
+  text-align: -webkit-center;
+}
+.idioma{
+  top: 110px !important;
+}
+.conex-red{
+  top: 110px;
+}
+  .logo-rita {
+    height: auto;
+  }
+  .desc-logo {
+    width: 50%;
+    text-align: justify;
+  }
+  
+}
+@media (max-width: 657px) {
+ 
+  .content-header{
+    margin: 14% auto;
+    margin-bottom: 1px;
+  }
+  .logo-rita {
+    width: 80%;
+    height: auto;
+  }
+  .desc-logo {
+    width: 80%;
+  }
+  .social-media{
+    right: 10px;
+  }
+  h4{
+    font-weight: 100;
+    font-size: 14px;
+    line-height : 25px;
+  }
+  .logo-ud{
+    left: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .menu-bar{
+    height: 80px;
+  }
+  .content-news .news-content p{
+    text-align: justify;
+  }
+  .content-news .news-content {
+  width: 100%;
+}
+  .logo-ud{
+    position: absolute;
+    left: 20px;
+    height: 70px !important;
+    text-align: left;
+  }
+  .logo-ud img{
+    height: 70px !important;
+    margin-top: -12px;
+  }
+  .conex-red{
+    top: 90px;
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+    padding-top: 5px;
+    box-shadow: -2px 1px 12px 0px rgba(255,255,255,0.75);
+  }
+  .conex-red h6{
+    font-size: 12px;
+  }
+  .conex-red:hover{
+    width: 320px;
+  }
+  .conex-red img{
+    height: 90%;
+  }
+  .social-media{
+    display: none;
+  }
+  .content-header{
+    width: 90%;
+  }
+  .btn-centro-sol{
+    width: 200px;
+    height: 45px;
+  }
+  .menu-bar .opened-menu{
+    right: 25px;
+  }
+}
+
 .menu-bar-general{
   background-color: #8c1919 !important;
 }
@@ -523,3 +686,14 @@ height: 90%;
   width: 100%;
 }
 
+/*ESTILOS PARA REGRESAR EN BLOG*/
+.breadcrumb ol li a{
+  visibility: hidden;
+}
+
+.breadcrumb ol li a::after{
+  content:" << Regresar  << ";
+  visibility: visible;
+  font-size: large;
+  color: #8c1919;
+}
